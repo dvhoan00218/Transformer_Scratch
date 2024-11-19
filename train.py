@@ -209,6 +209,7 @@ def train_model(config):
     preload = config['preload']
     model_filename = latest_weights_file_path(config) if preload == 'latest' else get_weights_file_path(config, preload) if preload else None
     # model_filename = '/kaggle/input/transformer/pytorch/transformer/1/tmodel_04.pt'
+    model_filename = None
     if model_filename:
         print(f'Preloading model {model_filename}')
         state = torch.load(model_filename)
