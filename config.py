@@ -15,7 +15,7 @@ def get_config():
         "preload": "latest",
         "tokenizer_file": "tokenizer_{0}.json",
         "experiment_name": "runs/tmodel",
-        "current_model_path": "/kaggle/input/t-model7"
+        "current_model_path": "/kaggle/input/t-model7/tmodel_07.pt"
     }
 
 def get_weights_file_path(config, epoch: str):
